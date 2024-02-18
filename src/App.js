@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import react, { useState } from "react";
 import axios from "axios";
-import { Audio } from "react-loader-spinner";
 
 export default function App() {
   const [city, setCity] = useState(null);
