@@ -51,15 +51,7 @@ export default function App() {
           <input type="text" onChange={updateCity} placeholder="Enter a city" />
           <input type="submit" value="Search" />
         </form>
-        <Audio
-          height="80"
-          width="80"
-          radius="9"
-          color="green"
-          ariaLabel="loading"
-          wrapperStyle
-          wrapperClass
-        />
+       
       </div>
     );
   }
