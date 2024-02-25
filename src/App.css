@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-family: "Sigmar", cursive;
+  margin: 30px auto;
 }
 
 .App-logo {
@@ -18,8 +21,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
+  
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +38,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.container{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 60px;
+  background: #dac3d8;
+  border-radius: 10px;
+}
+
+.search {
+  margin-bottom: 20px;
 }

@@ -31,26 +31,39 @@ export default function App() {
   if (temp) {
     return (
       <div className="App">
-        <h1>Weather App</h1>
-        <form onSubmit={handleSubmit}>
-          <input type="text" onChange={updateCity} placeholder="Enter a city" />
-          <input type="submit" value="Search" />
-        </form>
-        <h3>Temperature: {temp}</h3>
-        <h3>Description: {desc}</h3>
-        <h3>Humidity: {humidity}</h3>
-        <h3>Wind: {wind}</h3>
+        
+        <div className='container'>
+          <form onSubmit={handleSubmit} className='search'>
+            <input type="text" onChange={updateCity} placeholder="Enter a city" />
+            <input type="submit" value="Search" />
+          </form>
+          <h1>{city}</h1>
+          <ul>
+            <li>{desc}</li>
+          </ul>
+          <div className="row">
+            <div className="col-6">
+            <span>Temperature: {temp} ℃</span>
+            </div>
+            <div className="col-6">
+              <span>Humidity: {humidity}</span>
+              <br/>
+              <span>Wind: {wind}</span>
+            </div>
+          </div>
+          </div>
       </div>
     );
   } else {
     return (
       <div className="App">
-        <h1>Weather App</h1>
-        <form onSubmit={handleSubmit}>
+        
+        <div className='container'>
+        <form onSubmit={handleSubmit} className='search'>
           <input type="text" onChange={updateCity} placeholder="Enter a city" />
           <input type="submit" value="Search" />
         </form>
-       
+        </div>
       </div>
     );
   }
