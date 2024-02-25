@@ -56,3 +56,8 @@ ul {
 .search {
   margin-bottom: 20px;
 }
+
+.center{
+  text-align: center;
+  margin: 0 auto;
+}

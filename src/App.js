@@ -52,7 +52,9 @@ export default function App() {
             </div>
           </div>
           </div>
+          <div className='center'>Open-source code, by <a target='blank' rel='noreferrer' href='https://github.com/'>Mina</a></div>
       </div>
+      
     );
   } else {
     return (
@@ -63,7 +65,10 @@ export default function App() {
           <input type="text" onChange={updateCity} placeholder="Enter a city" />
           <input type="submit" value="Search" />
         </form>
+
         </div>
+        <div className='center'>Open-source code, by <a target='blank' rel='noreferrer' href='https://github.com/'>Mina</a></div>
+
       </div>
     );
   }
